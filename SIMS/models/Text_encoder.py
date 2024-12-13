@@ -11,7 +11,7 @@ class TextEncoder(nn.Module):
             self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')  
             self.extractor = BertModel.from_pretrained('bert-base-uncased')
         elif language == 'cn':
-            self.tokenizer = BertTokenizer.from_pretrained('bert-base-chinesen')  
+            self.tokenizer = BertTokenizer.from_pretrained('bert-base-chinese')  
             self.extractor = BertModel.from_pretrained('bert-base-chinese')
         self.device = config.DEVICE
 
