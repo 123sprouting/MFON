@@ -1,6 +1,6 @@
 Pytorch implementation for Coling2025 paper: Modal Feature Optimization Network with Prompt for Multimodal Sentiment Analysis.
 
-![Image text](https://raw.github.com/yourName/repositpry/master/yourprojectName/img-folder/test.jpg)
+![Image text](https://github.com/123sprouting/MFON/blob/main/MFON-structure.jpg)
 
 
 
