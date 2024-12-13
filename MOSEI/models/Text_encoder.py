@@ -15,11 +15,11 @@ class TextEncoder(nn.Module):
         self.name = name
         language = config.MOSEI.downStream.language
         if language =='en':
-            self.tokenizer = BertTokenizer.from_pretrained('/home/zxm/pycharm/data/pretrain_bert/bert-base-uncased')  
-            self.extractor = BertModel.from_pretrained('/home/zxm/pycharm/data/pretrain_bert/bert-base-uncased')
+            self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')  
+            self.extractor = BertModel.from_pretrained('bert-base-uncased')
         elif language == 'cn':
-            self.tokenizer = BertTokenizer.from_pretrained('/home/zxm/pycharm/data/pretrain_bert/bert_cn')  
-            self.extractor = BertModel.from_pretrained('/home/zxm/pycharm/data/pretrain_bert/bert_cn')
+            self.tokenizer = BertTokenizer.from_pretrained('bert-base-chinese')  
+            self.extractor = BertModel.from_pretrained('bert-base-chinese')
         self.device = config.DEVICE
 
     def forward(self, text):
