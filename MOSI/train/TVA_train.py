@@ -99,9 +99,7 @@ def TVA_train_fusion(config, metrics, seed, train_data, valid_data):
             best_epoch = epoch
             best_loss = result_loss
             model.save_model()
-        # if epoch - best_epoch > 8:
-        #     break
-           
+        
 
 def eval(model, metrics, eval_data, device):
     model.eval()
