@@ -62,7 +62,6 @@ class TVA_fusion(nn.Module):
         
         self.vlen, self.alen = config.MOSEI.downStream.vlen, config.MOSEI.downStream.alen
         
-        # 加权重的提示 
         self.prompta_m = nn.Parameter(torch.rand(self.alen, encoder_fea_dim))
         self.promptv_m = nn.Parameter(torch.rand(self.vlen, encoder_fea_dim)) 
         
