@@ -70,10 +70,6 @@ class TVA_fusion(nn.Module):
         
         self.proj_v = nn.Linear(vision_fea_dim, encoder_fea_dim)
         
-        # self.proj_t = nn.Conv1d(text_fea_dim, encoder_fea_dim, kernel_size=1, padding=0, bias=False)
-        # self.proj_a = nn.Conv1d(vision_fea_dim, encoder_fea_dim, kernel_size=1, padding=0, bias=False)
-        # self.proj_v = nn.Conv1d(self.orig_d_v, self.d_v, kernel_size=1, padding=0, bias=False)
-
         self.vision_with_text = TransformerEncoder(
             embed_dim=encoder_fea_dim, num_heads=vision_text_nhead, layers=vision_text_tf_num_layers, 
             attn_dropout=attn_dropout, relu_dropout=attn_dropout, res_dropout=attn_dropout, embed_dropout=attn_dropout,
