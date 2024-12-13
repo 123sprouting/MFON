@@ -13,7 +13,7 @@ if not os.path.exists(LOGPATH):
 
 class MOSEI:
     class path:
-        raw_data_path = '/home/zxm/pycharm/data/MOSEI/unaligned_50.pkl'
+        raw_data_path = 'data/MOSEI/unaligned_50.pkl'
         model_path = os.path.join(root_path, 'save_models/all_model/MOSEI/')
         if not os.path.exists(model_path): 
             os.makedirs(model_path)
