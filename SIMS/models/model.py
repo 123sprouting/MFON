@@ -62,7 +62,7 @@ class TVA_fusion(nn.Module):
         
         self.vlen, self.alen = config.SIMS.downStream.vlen, config.SIMS.downStream.alen
         self.p_len = config.SIMS.downStream.p_len
-        # 加权重的提示 
+
         self.prompta_m = nn.Parameter(torch.rand(self.alen, encoder_fea_dim))
         self.promptv_m = nn.Parameter(torch.rand(self.vlen, encoder_fea_dim)) 
         
