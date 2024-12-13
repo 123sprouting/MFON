@@ -136,10 +136,7 @@ class TVA_fusion(nn.Module):
             loss_a = self.get_KL_loss(x_a_embed, x_a_embed_froze) 
             loss_nce = self.get_InfoNCE_loss(x_v_embed, x_t_embed) + self.get_InfoNCE_loss(x_a_embed, x_t_embed) 
         else:
-            x_tva = torch.stack([x_t_embed, x_v_embed, x_a_embed])
-            model_tva = self.TVA_decoder.MLP[2:]
-            pred_tva = model_tva(x_tva)
-            return pred, pred_tva
+            return pred, None
             
         return pred, (loss_v, loss_a, loss_nce)
         
