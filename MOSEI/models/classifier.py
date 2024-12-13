@@ -5,7 +5,6 @@ class BaseClassifier(nn.Module):
     def __init__(self, input_size, hidden_size, output_size,name=None):
         super(BaseClassifier, self).__init__()
         self.name = name
-        # ModuleList = [nn.Dropout(p=drop_out)]
         ModuleList = []
         for i, h in enumerate(hidden_size):
             if i == 0:
