@@ -18,6 +18,9 @@ conda activate pytorch
 ### Data Download
 
 - Get datasets from public link:https://github.com/thuiar/Self-MM and  change the raw_data_path  to your local path(In config.py).
+### Pretrained model:
+链接:https://pan.baidu.com/s/1_EcyiHYXtSFTjG5Ro7E1SQ 
+提取码:2xx5
 
 ### Running the code
 
