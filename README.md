@@ -1,6 +1,9 @@
 Pytorch implementation for Coling2025 paper: Modal Feature Optimization Network with Prompt for Multimodal Sentiment Analysis.
 
 ![Image text](https://raw.github.com/yourName/repositpry/master/yourprojectName/img-folder/test.jpg)
+
+
+
 The training and testing of the MOSI, MOSEI, and SIMS datasets are implemented in three files with the same name.
 
 ### Setup the environment
