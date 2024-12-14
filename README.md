@@ -11,7 +11,7 @@ The training and testing of the MOSI, MOSEI, and SIMS datasets are implemented i
 We work with a conda environment.
 
 ```
-conda env create -f environment.yml
+conda env create -f environment.yaml
 conda activate pytorch
 ```
 
